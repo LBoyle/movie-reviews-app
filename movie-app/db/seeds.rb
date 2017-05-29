@@ -7,53 +7,53 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Movie.create!([
-#   {
-#     title: "The Nice Guys"
-#   },
-#   {
-#     title: "Hell Or High Water"
-#   },
-#   {
-#     title: "Super"
-#   },
-#   {
-#     title: "Fight Club"
-#   }
-#   ])
-#
-# Actor.create!([
-#   {
-#     name: "Brad Pitt"
-#   },
-#   {
-#     name: "Edward Norton"
-#   },
-#   {
-#     name: "Rainn Wilson"
-#   },
-#   {
-#     name: "Ellen Page"
-#   },
-#   {
-#     name: "Russell Crowe"
-#   },
-#   {
-#     name: "Ryan Gosling"
-#   },
-#   {
-#     name: "Russell Crowe"
-#   },
-#   {
-#     name: "Ben Foster"
-#   },
-#   {
-#     name: "Chris Pine"
-#   },
-#   {
-#     name: "Jeff Bridges"
-#   },
-#   ])
+Movie.create!([
+  {
+    title: "The Nice Guys"
+  },
+  {
+    title: "Hell Or High Water"
+  },
+  {
+    title: "Super"
+  },
+  {
+    title: "Fight Club"
+  }
+  ])
+
+Actor.create!([
+  {
+    name: "Brad Pitt"
+  },
+  {
+    name: "Edward Norton"
+  },
+  {
+    name: "Rainn Wilson"
+  },
+  {
+    name: "Ellen Page"
+  },
+  {
+    name: "Russell Crowe"
+  },
+  {
+    name: "Ryan Gosling"
+  },
+  {
+    name: "Russell Crowe"
+  },
+  {
+    name: "Ben Foster"
+  },
+  {
+    name: "Chris Pine"
+  },
+  {
+    name: "Jeff Bridges"
+  },
+  ])
 
 
   Movie.find_by(title: "The Nice Guys").actors << Actor.find_by(name: "Russell Crowe")
