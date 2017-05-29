@@ -1,0 +1,21 @@
+<h1>Add a movie</h1>
+
+
+
+<form ng-submit="movies.create()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" ng-model="movies.movie.title" name="title" value="">
+  </div>
+
+  <div class="form-group">
+    <label for="actors">Actors</label>
+    <select class="" name="actors" ng-model="movies.movie.actors_id">
+      <option value="" disabled>Select an actor</option>
+      <option  ng-repeat="actor in movies.actors" value="{{ actor.id }}">{{ actor.name }}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <input type="submit" name="submit" value="Add Movie">
+  </div>
+</form>

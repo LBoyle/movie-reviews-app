@@ -16,6 +16,11 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: 'js/views/movies/index.html',
       controller: 'MoviesIndexCtrl as movies'
     })
+    .state('moviesNew', {
+      url: '/movies/new',
+      templateUrl: 'js/views/movies/new.html',
+      controller: 'MoviesNewCtrl as movies'
+    })
     .state('moviesShow', {
       url: '/movies/:id',
       templateUrl: 'js/views/movies/show.html',
