@@ -56,12 +56,37 @@ Actor.create!([
   ])
 
 
-  Movie.find_by(title: "The Nice Guys").actors << Actor.find_by(name: "Russell Crowe")
-  Movie.find_by(title: "The Nice Guys").actors << Actor.find_by(name: "Ryan Gosling")
-  Movie.find_by(title: "Hell Or High Water").actors << Actor.find_by(name: "Jeff Bridges")
-  Movie.find_by(title: "Hell Or High Water").actors << Actor.find_by(name: "Ben Foster")
-  Movie.find_by(title: "Hell Or High Water").actors << Actor.find_by(name: "Chris Pine")
-  Movie.find_by(title: "Super").actors << Actor.find_by(name: "Rainn Wilson")
-  Movie.find_by(title: "Super").actors << Actor.find_by(name: "Ellen Page")
-  Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Brad Pitt")
-  Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Edward Norton")
+  # Movie.find_by(title: "The Nice Guys").actors << Actor.find_by(name: "Russell Crowe")
+  # Movie.find_by(title: "The Nice Guys").actors << Actor.find_by(name: "Ryan Gosling")
+  # Movie.find_by(title: "Hell Or High Water").actors << Actor.find_by(name: "Jeff Bridges")
+  # Movie.find_by(title: "Hell Or High Water").actors << Actor.find_by(name: "Ben Foster")
+  # Movie.find_by(title: "Hell Or High Water").actors << Actor.find_by(name: "Chris Pine")
+  # Movie.find_by(title: "Super").actors << Actor.find_by(name: "Rainn Wilson")
+  # Movie.find_by(title: "Super").actors << Actor.find_by(name: "Ellen Page")
+  # Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Brad Pitt")
+  # Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Edward Norton")
+
+
+# Comment.create!([
+#   {
+#     author: "Horace",
+#     content: "Love this film",
+#   },
+#   {
+#     author: "Louis",
+#     content: "What a good film"
+#   },
+#   {
+#     author: "Tim",
+#     content: "Very funny"
+#   },
+#   {
+#     author: "Sophie",
+#     content: "Excellent!"
+#   }
+#   ])
+#
+# Movie.find_by(title: "The Nice Guys").comments << Comment.find_by(author: "Sophie")
+# Movie.find_by(title: "Fight Club").comments << Comment.find_by(author: "Tim")
+# Movie.find_by(title: "Super").comments << Comment.find_by(author: "Louis")
+# Movie.find_by(title: "Hell Or High Water").comments << Comment.find_by(author: "Horace")
