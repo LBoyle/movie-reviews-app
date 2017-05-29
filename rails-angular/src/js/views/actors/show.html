@@ -1,3 +1,9 @@
 <h1>Actors Show</h1>
 
-{{actors.actor}}
+<h2>{{actors.actor.name}}</h2>
+
+<hr>
+<h4>Movies</h4>
+<ul>
+  <li ng-repeat="movie in actors.actor.movies track by $index"><a ui-sref="moviesShow({id: movie.id})">{{movie.title}}</a></li>
+</ul>
