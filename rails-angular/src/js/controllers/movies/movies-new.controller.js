@@ -11,11 +11,17 @@ function MoviesNewCtrl(Movie, Actor, $state) {
 
   vm.create = createMovie;
   function createMovie() {
+    vm.movie.actor_ids = [];
+    vm.movie.actor_ids.push(vm.movie.actors_id);
+    const movieObj = {
+      'movie': vm.movie
+    };
+    console.log(movieObj);
     Movie
-      .save(vm.movie)
+      .save(movieObj)
       .$promise
-      .then(() => {
-        console.log(vm.movie);
+      .then((data) => {
+        console.log(data);
         $state.go('moviesIndex');
       });
   }
