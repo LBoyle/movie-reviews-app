@@ -20,6 +20,11 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/movies/:id',
       templateUrl: 'js/views/movies/show.html',
       controller: 'MoviesShowCtrl as movies'
+    })
+    .state('actorsShow', {
+      url: '/actors/:id',
+      templateUrl: 'js/views/actors/show.html',
+      controller: 'ActorsShowCtrl as actors'
     });
 
   $urlRouterProvider.otherwise('/');
