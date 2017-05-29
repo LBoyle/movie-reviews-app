@@ -65,28 +65,27 @@ Actor.create!([
   Movie.find_by(title: "Super").actors << Actor.find_by(name: "Ellen Page")
   Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Brad Pitt")
   Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Edward Norton")
-# 
-#
-# Comment.create!([
-#   {
-#     author: "Horace",
-#     content: "Love this film",
-#   },
-#   {
-#     author: "Louis",
-#     content: "What a good film"
-#   },
-#   {
-#     author: "Tim",
-#     content: "Very funny"
-#   },
-#   {
-#     author: "Sophie",
-#     content: "Excellent!"
-#   }
-#   ])
 
-# Movie.find_by(title: "The Nice Guys").comments << Comment.find_by(author: "Sophie")
-# Movie.find_by(title: "Fight Club").comments << Comment.find_by(author: "Tim")
-# Movie.find_by(title: "Super").comments << Comment.find_by(author: "Louis")
-# Movie.find_by(title: "Hell Or High Water").comments << Comment.find_by(author: "Horace")
+
+Comment.create!([
+  {
+    author: "Horace",
+    content: "Love this film",
+    movie: Movie.find(1)
+  },
+  {
+    author: "Louis",
+    content: "What a good film",
+    movie: Movie.find(2)
+  },
+  {
+    author: "Tim",
+    content: "Very funny",
+    movie: Movie.find(3)
+  },
+  {
+    author: "Sophie",
+    content: "Excellent!",
+    movie: Movie.find(4)
+  }
+  ])
