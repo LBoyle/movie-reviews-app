@@ -1,6 +1,5 @@
 <h1>Movies Index</h1>
 
-
-{{1+1}}
-{{movies.message}}
-{{movies.movies}}
+<ul>
+  <li ng-repeat="movie in movies.movies track by $index"><a ui-sref="moviesShow({id: movie.id})">{{movie.title}}</a> - {{movie.actors.length}} actors</li>
+</ul>
