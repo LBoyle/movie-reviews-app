@@ -65,3 +65,11 @@
   Movie.find_by(title: "Super").actors << Actor.find_by(name: "Ellen Page")
   Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Brad Pitt")
   Movie.find_by(title: "Fight Club").actors << Actor.find_by(name: "Edward Norton")
+
+
+# Comment.create!([
+#   {
+#     author: "",
+#     content: ""
+#   }
+#   ])
