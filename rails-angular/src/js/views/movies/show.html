@@ -6,3 +6,10 @@
 <ul>
   <li ng-repeat="actor in movies.movie.actors track by $index"><a ui-sref="actorsShow({id: actor.id})">{{actor.name}}</a></li>
 </ul>
+
+<hr>
+
+{{movies.movie}}
+<ul>
+  <li ng-repeat="comment in movies.movie.comments track by $index"><strong>{{comment.author}}</strong> - {{comment.content}}</li>
+</ul>
