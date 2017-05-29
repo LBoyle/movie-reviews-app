@@ -14,7 +14,7 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('moviesIndex', {
       url: '/movies',
       templateUrl: 'js/views/movies/index.html',
-      controllerAs: 'MoviesIndexCtrl as movies'
+      controller: 'MoviesIndexCtrl as movies'
     });
 
   $urlRouterProvider.otherwise('/');
