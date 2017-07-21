@@ -1,15 +1,9 @@
-Starting project
+# Movie Reviews App
 
+A task during class on WDI at General Assembly. In groups, over about 4 hours.
 
-movie
-  - title
-  - cast [actors]
-  - comments
+## Contributors
 
-actor
-  - name
-  - films []
+Louis Boyle
 
-comments
-  - alias
-  - post
+Horace Keating
